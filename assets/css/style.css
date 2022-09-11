@@ -56,6 +56,21 @@ nav {
     margin-left: 64px;
     text-decoration: none;
 }
+
+.name {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    margin-top: 64px;
+    position: absolute;
+    right: 5%;
+}
+.name > a {
+    text-decoration: none !important;
+    color: black;
+}
+
 .navigation__link:hover {
     cursor: pointer;
     transform: scale(1.1);
@@ -279,9 +294,15 @@ li b {
     height: auto;
 }
 .description {
+    text-decoration: none !important;
+    color: black;
     width: 100%;
     height: auto;
     text-align: center;
+}
+.cardlinker {
+    text-decoration: none !important;
+    color: black;
 }
 .description h2 {
     font-family: 'Quicksand', sans-serif;
@@ -316,9 +337,30 @@ li b {
 }
 .caption {
     font-family: 'Quicksand', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     width: 120%;
     height: auto;
+}
+
+.flipper {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    background-color: #1f3d84;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    transition: all 0.2s ease-in;
+}
+
+
+.flipper:hover {
+    background-color: #5472ab/*#4055bf*/;
 }
 
 .flip-card {
@@ -359,9 +401,13 @@ li b {
     transform: rotateY(180deg);
 }
 
+/*
+
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
+
+*/
 
 /* Contact */
 .contactunderline {
@@ -405,6 +451,11 @@ li b {
 }
 .hyperlink {
     margin: 20px;
+}
+.hyperlink > img {
+    height: 40px;
+    width: auto;
+    fill: #1f3d84;
 }
 
 #hyperlinks a:hover {

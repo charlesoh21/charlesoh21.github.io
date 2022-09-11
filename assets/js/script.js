@@ -7,10 +7,6 @@ new TypeIt("#intro-name", {
   }).go();
 
 // Jump.js library
-document.getElementById("home-jump").onclick = function() {
-    Jump("#Home");
-};
-
 document.getElementById("about-jump").onclick = function() {
     Jump("#About");
 };
