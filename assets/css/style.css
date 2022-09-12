@@ -198,6 +198,7 @@ u1 {
 }
 
 li {
+    text-align: center;
     list-style: none;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
