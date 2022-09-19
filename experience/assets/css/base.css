@@ -1,0 +1,51 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 300;
+}
+
+.navbar {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    
+}
+
+.navelem {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+}
+
+.navelem > a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    margin-top: 64px;
+    margin-left: 64px;
+    text-decoration: none;
+}
+
+.name {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    margin-top: 88px;
+    position: absolute;
+    right: 5%;
+}
+
+.content {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
