@@ -5,14 +5,20 @@ body {
 }
 
 .navbar {
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 30%;
     
+}
+.box {
+    width: 100%;
+    background-color: #1f3d84;
+    padding-top: 63px;
+    padding-bottom: 63px;
 }
 
 .navelem {
@@ -28,24 +34,121 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     font-weight: 400;
-    color: black;
-    margin-top: 64px;
+    color: white;
     margin-left: 64px;
     text-decoration: none;
+}
+
+.navelem:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .name {
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     font-weight: 400;
-    color: black;
-    margin-top: 88px;
+    color: white;
     position: absolute;
     right: 5%;
+
+}
+
+.name > a {
+    color: white;
+    text-decoration: none;
 }
 
 .content {
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
+    padding-top: 100px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.content > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content > h1 {
+    display: block;
+    text-align: center;
+    font-size: 280%;
+}
+
+.content > h2 {
+    color: rgb(21, 21, 128);
+    font-size: 200%;
+}
+
+
+
+.content > h3 {
+    font-size: 230%;
+    color: rgb(48, 147, 172);
+
+}
+
+.content > h4 {
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.content > h5 {
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.content > p {
+    display: block;
+    text-align: end;
+    margin-right: 80px;
+}
+
+.lownav {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 70px;
+    margin-top: 100px;
+}
+
+.lownav > a {
+    text-decoration: none !important;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 200%;
+}
+
+#hyperlinks {
+    display: flex;
+}
+
+.hyperlink > img {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
+    width: auto;
+    fill: #1f3d84;
+}
+
+
+/* Bottom nav */
+.bottom-nav {
+    position: relative;
+    margin-bottom: 200px;
+
+}
+.bottom-nav > p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 130%;
+    font-weight: 1000;
+    position: absolute;
+    right: 5%;
+    
 }

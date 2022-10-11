@@ -8,19 +8,159 @@
     </head>
 
     <body>
-        <div class="navbar">
-            <p class="navelem"><a href="/#about">About</a></p>
-            <p class="navelem"><a href="/#experience">Experience</a></p>
-            <p class="navelem"><a href="/#contact">Contact</a></p>
-            <p class="name">Charles Oh</p>
+        <div class="box">
+            <div class="navbar">
+                <p class="navelem"><a href="/#about">About</a></p>
+                <p class="navelem"><a href="/#experience">Experience</a></p>
+                <p class="navelem"><a href="/#contact">Contact</a></p>
+                <p class="name"><a href="/">Charles Oh</a></p>
+            </div>
         </div>
+        
         <div class="content">
-            <h1>Samsung</h1>
-            <h1>PST (Pre-screening Test) data analytics dashboard automatically extracts data from Excel sheets with PST results, transfers data into MySQL database, and generates data analysis and visualizations on Sharepoint.</h1>
-
-
+            <h1>Samsung Semiconductor</h1>
             
+            &nbsp;&nbsp; 
 
+
+            <h2> The Problem
+            </h2>
+
+            <h5> <b>Lack of ownership</b> of pre-screening test (PST) data halts effective communication with Samsung's customers.
+            </h5>
+
+            <br>
+
+            <h2> The Solution
+            </h2>
+
+            <h5> An internal <b>data analytics tool</b> that visualizes PST data  
+
+                <br>
+                <a href="https://github.com/charlesoh21/Lab-Data-Dashboard">Click here to view the code</a>
+            </h5>
+            
+            <br>
+
+
+            <h2> The Product 
+            </h2>
+
+            <h5> Pre-screening Test Data Analytics Dashboard
+            </h5>
+
+            <br>
+
+            <h2> Intended User
+            </h2>
+
+            <h5> Technical Account Managers & Application Engineers
+            </h5>
+
+            <br>
+
+            <h2> Product Overview 
+            </h2>
+
+            <h5> PST dashboard automatically extracts PST data from Excel sheets, transfers data into MySQL database, and generates <b>visualizations</b> on Sharepoint.
+            </h5>
+
+            <img src="assets/img/semi1.png" width="900" height="auto"/>
+    
+            <br>
+            <br>
+       
+            <h2> Product Functionalities 
+            </h2>
+
+            <br>
+
+            <img src="assets/img/semi2.png" width="900" height="auto"/>
+
+            <br>
+
+            <h5> 1. DIMM Type/Part Number: Selection of product type (s)
+            </h5>
+            <h5> 2. Product History: Pre-screening test log by date for selected products
+            </h5>
+            <h5> 3. Selected Parts: Total count, failure rate, time to failure for selected products
+            </h5>
+            <h5> 4. Failure Rate Comparison: PST failure rate comparison for selected products
+            </h5>
+            <h5> 5. DIMM Quantity by Customers: Customer breakdown for selected products
+            </h5>
+
+            <br>
+
+            <h2> Engineering Spec 
+            </h2>
+
+            <h5> Data Flow:
+            </h5>
+            <img src="assets/img/semi3.png" width="900" height="auto"/>
+
+
+
+            <h5> 
+                A Python script converts the entries from Excel sheets to a .db file. This .db file is then converted to a Sharepoint list using a mixture of the SOAP and REST APIs provided by Sharepoint.
+                <br>
+                <br>
+                
+                <li>
+                In order for an user to run the aforementioned python script, they should run python3 xlsx2SPlist.py in their terminal with the SPlist.py file in the same working directory.
+                </li>
+                <br>
+                <li>
+                The workdir variable in xlsx2SPlist.py should be set to point to a directory that contains settings.cfg and the .xlsx files to be converted to Sharepoint.
+                </li>
+                <br>
+                *Note that there is no need to worry about duplicate/garbage data entries being added to sharepoint, as xlsx2SPlist.py automatically filters these out.
+                <br>
+                <br>
+                <br>
+                Tech Stack:
+                <br>
+                <li> Backend: Python </li>
+                <li> Database: SQLite </li>
+                <li> Frontend: Javascript, CSS, HTML </li>
+                <li> Libraries: Chart.js, jQuery, lxml </li>
+
+            </h5>
+
+            <br>
+
+            <h2> Impact
+            </h2>
+
+            <h5> 
+                1. <b>Increased product quality</b>: With analyzed PST data, Samsung can provide product quality feedback to the chip design team.
+                <br>
+                <br>
+                2. <b>Increased customer satisfaction</b>: Ownership of analyzed PST data will decrease customer management turnaround time by three weeks.
+            </h5>
+
+            <br>
+
+
+
+
+
+        </div>
+
+        <div class="lownav">
+            <a href="berkeley.html" class="left"> &#171; imagiCal</a>
+
+            <div id="hyperlinks">
+                <a class="hyperlink" href="mailto:charlesoh@berkeley.edu" target="_blank" rel="noopener noreferrer"><img src="assets/img/minutemailer.svg" /></a>
+                <a class="hyperlink" href="https://www.linkedin.com/in/younghoonoh/" target="_blank" rel="noopener noreferrer"><img src="assets/img/linkedin.svg" /></a>
+                <a class="hyperlink" href="https://github.com/charlesoh21/charlesoh21.github.io" target="_blank" rel="noopener noreferrer"><img src="assets/img/github.svg" /></a>
+                <a class="hyperlink" href="https://www.facebook.com/younghoon.oh" target="_blank" rel="noopener noreferrer"><img src="assets/img/facebook.svg" /></a>
+            </div>
+
+            <a href="nightmarket.html" class="right">Nightmarket &#187;</a>
+        </div>
+        <div class="bottom-nav">
+            <p>© Built by Charles Oh 2022</p>
         </div>
     </body>
 </html>

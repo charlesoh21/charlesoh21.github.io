@@ -19,10 +19,6 @@ document.getElementById("contact-jump").onclick = function() {
     Jump("#Contact");
 };
 
-document.getElementById("up-arrow").onclick = function() {
-    Jump("#Home");
-};
-
 document.getElementById("contact-button").onclick = function() {
     Jump("#Contact");
 };
@@ -30,6 +26,7 @@ document.getElementById("contact-button").onclick = function() {
 //ScrollRevealjs library
 
 ScrollReveal().reveal('#one', {delay: 200, duration: 1000});
+
 
 ScrollReveal().reveal('#two', {delay: 200, duration: 1000});
 
